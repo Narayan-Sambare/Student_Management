@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>My Web Page</title>
+<style>
+	body{
+		background-image: url("/static/aab.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	#div{
+		width: 300px;
+		height: 400px;
+		background-color: white;
+		margin-left:300px;
+		margin-top:70px;
+		border:2px solid black;
+		opacity: 0.8;
+		border-radius: 0px 35px;
+	}
+	#img1{
+		width: 100px;
+		height: 100px;
+		margin-left: 100px;
+		margin-top: -40px;
+	}
+	h2{
+		margin-left: 80px;
+		margin-top: 5px;
+	}
+	#input{
+		margin-left: 50px;
+		margin-top: 10px;
+		padding: 10px;
+	}
+	#btn{
+		margin-left: 50px;
+		margin-top: 10px;
+		padding: 10px;
+	}
+	#btn:hover{
+		background-color: black;
+		color:white;
+	}
+	#img2{
+		width: 150px;
+		height: 70px;
+		margin-top: 30px;
+		margin-left: 70px;
+	}
+</style>
+</head>
+<body>
+{% include 'navbar.html' %}
+<div id="div">
+	<form action="" method="post">
+		{% csrf_token %}
+	<img src="/static/logo.png" id="img1">
+	<h2>Login Window</h2>
+	<input type="email" name="email" placeholder="Enter Email" id="input">
+	<input type="password" name="pass" placeholder="Enter Password" id="input"><br><br>
+	<input type="submit" value="Submit" id="btn">
+	<br>
+	<img src="/static/face.jpg" id="img2">
+</form>
+</div>
+</body>
+</html>
