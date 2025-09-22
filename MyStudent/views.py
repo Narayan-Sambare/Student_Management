@@ -145,3 +145,6 @@ def StudUpdate(request):
 		s1.city=city
 		s1.save()
 		return HttpResponseRedirect('/userdash')
+
+def MyIndex(request):
+	return render(request,'index.html')

@@ -17,4 +17,5 @@ urlpatterns = [
     path('usernoticeview/',views.UserNoticeView),
     path('userstudremove',views.UserStudRemove),
     path('studupdate/',views.StudUpdate),
+    path('index/',views.MyIndex),
 ]
